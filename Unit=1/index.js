@@ -45,8 +45,6 @@
 //     m.question("Enter the number: ", n2 => {
 //     const a = parseFloat(n1);
 //     const b = parseFloat(n2);
-//     // console.log(n);
-//     // console.log(typeof(n));
 //     if(a > b)
 //     {
 //         console.log("a is max")
@@ -67,13 +65,12 @@
 
 // console.log("Check Leap Year")
 // const readline = require('node:readline');
-// const leap = readline.createInterface({
+// const l = readline.createInterface({
 //   input: process.stdin,
 //   output: process.stdout,
 // });
-// leap.question("Enter the year: ", n => {
-//     // console.log(n);
-//     // console.log(typeof(n));
+// l.question("Enter the year: ", n => {
+//         // console.log(n);
 //     if(n % 4 == 0)
 //     {
 //         console.log("leap year")
@@ -82,7 +79,7 @@
 //     {
 //         console.log("not leap year")
 //     }
-//     leap.close();
+//     l.close();
 // });
 
 
@@ -121,7 +118,7 @@
 //   output: process.stdout,
 // });
 // f.question("Enter the number: ", n => {
-//     n = parseInt(n); 
+//     // n = parseInt(n); 
 //     let fact = 1;
 //     for (let i = 1; i <= n; i++) 
 //     {
@@ -144,7 +141,7 @@
 //   output: process.stdout,
 // });
 // m.question("Enter the number: ", n => {
-//     n = parseInt(n); 
+//     // n = parseInt(n); 
 //     for (let i = 1; i <= 10; i++) 
 //     {
 //         console.log(`${n} x ${i} = ${n * i}`);
@@ -165,7 +162,7 @@
 //   output: process.stdout,
 // });
 // r.question("Enter the number: ", n => {
-//     n = parseInt(n); 
+//     // n = parseInt(n); 
 //     let original = n;
 //     let reversed = 0;
 //     while (n > 0)
