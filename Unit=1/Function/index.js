@@ -1,3 +1,4 @@
+// (1).Function
 // import add from "./add.js";
 // // const add = require("./add.js");
 // console.log(add(11,22));
@@ -6,7 +7,7 @@
 
 
 
-// (1).Path
+// (2).Path
 
 // const path = require("path");
 // console.log("Directory name: ",__dirname);
@@ -17,7 +18,7 @@
 
 
 
-// (2).moment
+// (3).moment
 
 // const moment =require("moment");
 // console.log("Current date and time: ",moment().format("DD-MM-YYYY HH:mm:ss"));
@@ -25,7 +26,7 @@
 
 
 
-//(3).lodash
+//(4).lodash
 
 // const ls = require("lodash");
 // console.log("capitalize: ",ls.capitalize("Hello World"));
@@ -33,7 +34,7 @@
 
 
 
-// (4).fs
+// (5).fs
 
 // const fs = require("fs");
 // fs.writeFile("best.txt","Hello, MCA-Z2 Class!",(err)=>{
