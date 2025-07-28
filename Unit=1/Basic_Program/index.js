@@ -305,6 +305,7 @@
 
 
 
+
 // (12). Check Armstrong Number
 // Definition: Check if the number is equal to the sum of its digits each raised to the power of the number of digits.
 
@@ -334,4 +335,249 @@
 //    console.log(`number is not armstrong`);
 // }
 // a.close();  
+// });
+
+
+
+
+// (13). Generate Fibonacci Series
+// Definition: Generate the first n Fibonacci numbers.
+
+// console.log("Generate Fibonacci Series");
+
+// const f = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// f.question("Enter the number: ", (n) => {
+//     // n = parseInt(n);
+// if (isNaN(n) || n <= 0) 
+// {
+//     console.log("Please enter a valid positive number");
+// } 
+// else 
+// {
+//     let a = 0, b = 1;
+//     console.log("Fibonacci Series: ");
+//     for (let i = 0; i < n; i++) 
+//     {
+//         console.log(a);
+//         let next = a + b;
+//         a = b;
+//         b = next;
+//     }
+// }
+// f.close();
+// });
+
+
+
+
+// (14). Check Vowel or Consonant
+// Definition: Determine if a given character is a vowel.
+
+// console.log("Check Vowel or Consonant");
+
+// const v = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// v.question("Enter a single character: ", (char) => {
+//     // n = parseInt(n);
+// if (char.length !== 1 || !/[a-zA-Z]/.test(char)) 
+// {
+//     console.log("Please enter a valid single alphabet character");
+// } 
+// else 
+// {
+//     const lowerChar = char.toLowerCase();
+//     if (["a", "e", "i", "o", "u"].includes(lowerChar)) 
+//     {
+//         console.log(`character a vowel`);
+//     } 
+//     else 
+//     {
+//         console.log(`character a consonant`);
+//     }
+// }
+// v.close();
+// });
+
+
+
+
+// (15). Simple Calculator
+// Definition: Perform +, -, *, / between two numbers.
+
+// console.log("Simple Calculator");
+
+// const c = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// c.question("Enter first number: ", (n1) => {
+//     c.question("Enter second number: ", (n2) => {
+//         c.question("Enter operator (+, -, *, /): ", (op) => {
+//             // n = parseInt(n);
+//             let a = parseFloat(n1);
+//             let b = parseFloat(n2);
+//             let result;
+//                 if (op === '+') result = a + b;
+//                 else if (op === '-') result = a - b;
+//                 else if (op === '*') result = a * b;
+//                 else if (op === '/') result = b !== 0 ? a / b : "Cannot divide by zero!";
+//                 else result = "Invalid operator";
+//                 console.log("ans is: " + result);
+// c.close();
+//         });
+//     });
+// });
+
+
+
+
+// (16). Find GCD (HCF)
+// Definition: Calculate the greatest common divisor of two numbers.
+
+// console.log("Find GCD (HCF)");
+
+// const g = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// g.question("Enter first number: ", (a) => {
+//     g.question("Enter second number: ", (b) => {
+//         // n = parseInt(n);
+//         let x = parseInt(a);
+//         let y = parseInt(b);
+//             while (y !== 0) 
+//             {
+//                 let temp = y;
+//                 y = x % y;
+//                 x = temp;
+//             }
+//             console.log("GCD (HCF) is: ", x);
+// g.close();
+//     });
+// });
+
+
+
+
+// (17). Check Perfect Number
+// Definition: A number whose sum of divisors equals itself.
+
+// console.log("Check Perfect Number");
+
+// const p = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// p.question("Enter a number: ", (num) => {
+//     // n = parseInt(n);
+//     let n = parseInt(num);
+//     let sum = 0;
+// for (let i = 1; i < n; i++) 
+// {
+//     if (n % i === 0) 
+//     {
+//         sum += i;
+//     }
+// }
+// if (sum === n) 
+// {
+//     console.log(`number is a perfect Number`);
+// } 
+// else 
+// {
+//     console.log(`number is not perfect number`);
+// }
+// p.close();
+// });
+
+
+
+
+// (18). Print All Divisors
+// Definition: Display all positive divisors of a number.
+
+// console.log("Print All Divisors");
+
+// const d = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// d.question("Enter the number: ", (num) => {
+//     // n = parseInt(n);
+//     let n = parseInt(num);
+//     console.log("Divisors of " + n + " are:");
+//     for (let i = 1; i <= n; i++) 
+//     {
+//         if (n % i === 0) 
+//         {
+//             console.log(i);
+//         }
+//     }
+// d.close();
+// });
+
+
+
+
+// (19). Number is Positive, Negative or Zero
+// Definition: Check if number is +ve, -ve, or zero.
+
+// console.log("Number is Positive, Negative or Zero");
+
+// const p = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// p.question("Enter a number: ", (num) => {
+//     // n = parseInt(n);
+//     let n = parseFloat(num);
+//     if (n > 0) 
+//     {
+//         console.log(`number is positive`);
+//     }
+//     else if (n < 0) 
+//     {
+//         console.log(`number is negative`);
+//     }
+//     else 
+//     {
+//         console.log(`number is zero`);
+//     }
+// p.close();
+// });
+
+
+
+
+// (20). Find Power (Exponentiation)
+// Definition: Compute a raised to the power b (a^b).
+
+// console.log("Find Power (Exponentiation)");
+
+// const p = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+
+// p.question("Enter base (a): ", (a) => {
+//     p.question("Enter exponent (b): ", (b) => {
+//         //  n = parseInt(n);
+//         let base = parseFloat(a);
+//         let exponent = parseFloat(b);
+//         let result = Math.pow(base, exponent);  // or: base ** exponent
+//         console.log(`${base} ^ ${exponent} = ${result}`);
+// p.close();
+//     });
 // });
