@@ -20,5 +20,5 @@ app.put("/update/:id",update);
 app.delete("/delete/:id",destroy);
 
 app.listen(80, () => {
-    console.log(`server is running at http://localhost:80 /`);
+    console.log(`server is running at http://localhost:80/`);
 });
