@@ -18,13 +18,13 @@ const songSchema = new mongoose.Schema({
 const Song = mongoose.model("Song", songSchema);
 console.log("Song model created successfully");
 
-// Song.find()
-//     .then((allSongs) => {
-//         console.log("All songs retrieved successfully: all Songs");
-//     })
-//     .catch((error) => {
-//         console.error("Error retrieving songs:", error);
-//     });
+Song.find()
+    .then((allSongs) => {
+        console.log("All songs retrieved successfully: all Songs");
+    })
+    .catch((error) => {
+        console.error("Error retrieving songs:", error);
+    });
 
 Song.find({ category: "Bollywood"})
 .then((allSongs) => {
