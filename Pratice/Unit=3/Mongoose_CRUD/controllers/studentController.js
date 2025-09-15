@@ -1,4 +1,4 @@
-const Song = require("../Song");
+const Song = require("../models/Song");
 
 exports.index = (req, res) => {
     Song.find()
@@ -48,7 +48,7 @@ exports.store = (req,res) => {
 exports.update = (req, res) => {
     Song.findByIdAndUpdate(req.params.id, req.body, {new: true})
     .then((updateSong) => {
-        console.log("song updated successfully:", updateSong);
+        console.log("Song updated successfully:", updateSong);
         res.send({message: "Song updated successfully", data: updateSong});
     })
     .catch((error) => {
@@ -59,7 +59,7 @@ exports.update = (req, res) => {
 exports.delete = (req, res) => {
     Song.findByIdAndDelete(req.params.id)
     .then(() => {
-        console.log("song deleted successfully");
+        console.log("S  ong deleted successfully");
         res.send({message: "Song deleted successfully"});
     })
     .catch((error) => {

@@ -1,4 +1,4 @@
-const mongoose = ("../models/Song");
+const mongoose = require("mongoose");
 
 const songSchema = new mongoose.Schema({
     title: String,
@@ -10,6 +10,6 @@ const songSchema = new mongoose.Schema({
     year: Number,
 });
 
-const song = mongoose.model("Song", songSchema);
+const Song = mongoose.model("Song", songSchema);
 
-module.exports = song;
+module.exports = Song;
