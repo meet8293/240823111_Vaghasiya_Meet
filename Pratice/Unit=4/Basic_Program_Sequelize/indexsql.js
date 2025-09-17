@@ -10,7 +10,7 @@ const db = new Sequelize("mca", "root", "",{
 //Test connection
 // db.authenticate()
 //     .then(() => {
-//         console.log("Connection has been established Successfully");
+//         console.log("Connection has been established successfully");
 //     })
 //     .catch((err) => {
 //          console.error("Unable to connect to the database: ",err);
@@ -41,7 +41,7 @@ const Student = db.define("Student", {
 //Sync model
 // Student.sync()
 //     .then(() => {
-//         console.log("Student table created Successfully");
+//         console.log("Student table created successfully");
 //     })
 //     .catch((err) => {
 //         console.error("Unable to create table: ",err);
@@ -49,16 +49,16 @@ const Student = db.define("Student", {
 
 //insert data
 // Student.create({
-//     name: "Vaghasiya Yash V.",
-//     city: "Surat",
-//     email: "yashvaghasiya@gmail.com"
-// })
+//     name: "Vaghasiya Meet V.",
+//     city: "Rajkot",
+//     email: "meetvaghasiya@gmail.com"
+//     })
 //     .then(() => {
-//         console.log("Data inserted Successfully");
+//         console.log("Data inserted successfully");
 //     })
 //     .catch((err) => {
-//         console.error("Unable to Insert data: ",err);
-//   });
+//         console.error("Unable to insert data: ",err);
+//     });
 
 //fetch data
 // Student.findAll(where = {city: 'Surat'})
@@ -66,7 +66,7 @@ const Student = db.define("Student", {
 //         console.log(Students);
 //     })
 //     .catch((err) => {
-//         console.error("Unable to Insert data: ",err);
+//         console.error("Unable to insert data: ",err);
 //     });
 
 //fetch single data
@@ -79,12 +79,12 @@ const Student = db.define("Student", {
 //     });
 
 //update data
-// Student.update({name: "Yash", city: "Gondal"},
+// Student.update({name: "Yash", city: "Surat"},
 //     {
 //         where: {id: 2},
 //     })
 //     .then(() => {
-//         console.log("Data updated Successfully");
+//         console.log("Data updated successfully");
 //     })
 //     .catch((err) => {
 //         console.error("Unable to update data: ",err);
@@ -95,7 +95,7 @@ const Student = db.define("Student", {
 //     where: {id: 2},
 //     })
 //     .then(() => {
-//         console.log("Data deleted Successfully");
+//         console.log("Data deleted successfully");
 //     })
 //     .catch((err) => {
 //         console.error("Unable to delete data: ",err);
