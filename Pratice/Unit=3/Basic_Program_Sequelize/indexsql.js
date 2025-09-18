@@ -79,7 +79,7 @@ const Student = db.define("Student", {
 //     });
 
 //update data
-// Student.update({name: "Yash", city: "Surat"},
+// Student.update({name: "Yash", city: "Gondal"},
 //     {
 //         where: {id: 2},
 //     })
