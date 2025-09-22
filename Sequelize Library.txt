@@ -1,4 +1,0 @@
-sequalize with mysql in nodejs
-
-seqaulize library in detail
-https://dev.to/projectescape/the-comprehensive-sequelize-cheatsheet-3m1m
