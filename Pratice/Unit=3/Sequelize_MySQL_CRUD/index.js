@@ -3,7 +3,7 @@ const sequalize = require("sequelize");
 
 const studentRoute = require("./routes/studentRoute");
 const app = express();
-const PORT = 80;
+const PORT = 8000;
 app.use(express.json());
 
 app.use("/student", studentRoute);

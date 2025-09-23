@@ -10,6 +10,17 @@ exports.index = (req, res) => {
         res.send({ message: "Error retrieving students", error: error });
     });
 };
+exports.show = (req, res) => {
+    Student.findByPk(req.params.id)
+    .then((students) => {
+        console.log("All students retrieved successfully: ", students);
+        res.send({ message: "Students retrieved successfully", data: students });
+    })
+    .catch((error) => {
+        console.error("Error retrieving students: ",error);
+        res.send({ message: "Error retrieving students", error: error });
+    });
+};
 exports.store = (req, res) => {
     Student.create(req.body)
     .then((newStudent) => {
@@ -33,7 +44,7 @@ exports.update = (req, res) => {
     });
 };
 exports.delete = (req, res) => {
-    Student.destroy(req.body, { where: {id: req.params.id }})
+    Student.destroy({ where: {id: req.params.id }})
     .then(() => {
         console.log("Student deleted successfully");
         res.send({ message: "Student deleted successfully" });
